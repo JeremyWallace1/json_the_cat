@@ -33,7 +33,7 @@ describe('fetchBreedDescription', () => {
   });
 
   it('returns an error message when breed not found, via callback', (done) => {
-    fetchBreedDescription('Pomeranian', (err, desc) => {
+    fetchBreedDescription('Pomeranian', (err) => {
       //we expect an error for this scenario
       assert.equal(err, "No information found for breed: Pomeranian");
       done();
