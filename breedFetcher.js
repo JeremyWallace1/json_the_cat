@@ -6,9 +6,8 @@ const URL = 'https://api.thecatapi.com/v1/breeds/search?q=';
 const fetchBreedDescription = function(breedName, callback) {
   request(URL + breedName, (error, response, body) => {
     const data = JSON.parse(body);
-    return data;
+    return (error, data[0].description);
   });
-  
 };
 
-const module.exports = { fetchBreedDescription };
+module.exports = { fetchBreedDescription };
