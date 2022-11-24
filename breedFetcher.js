@@ -1,6 +1,6 @@
 const request = require('request');
 
-const URL = 'https://api.thecata2pi.com/v1/breeds/search?q=';
+const URL = 'https://api.thecatapi.com/v1/breeds/search?q=';
 
 
 const fetchBreedDescription = function(breedName, callback) {
